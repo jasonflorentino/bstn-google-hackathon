@@ -1,0 +1,10 @@
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include typography_mainFont;
+  @include typography_heading;
+}

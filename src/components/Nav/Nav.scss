@@ -1,18 +1,17 @@
 @use "../../partials/variables" as *;
 @use "../../partials/mixins" as *;
 
-.Nav {
+.nav {
+  padding: .5rem 7.8vw;
   width: 100%;
-  position: absolute;
   bottom: 0;
-  padding: .5rem;
   display: flex;
-  justify-content: center;
-  background-color: $color_blue_primary;
+  justify-content: space-between;
+  background-color: white;
   z-index: 100;
 
+
   &__link {
-    display: block;
     padding: .5rem 1rem;
     margin: 1rem;
     font-size: 1.5rem;

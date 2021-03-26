@@ -1,0 +1,43 @@
+@use "../../partials/variables" as *;
+@use "../../partials/mixins" as *;
+
+.Features {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    width: 80%;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  &__container {
+    display: flex;
+  }
+}
+
+.feature {
+  width: 20rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image {
+    width: 100px;
+    height: 100px;
+    background-color: $color-yellow;
+    margin-bottom: 1rem;
+  }
+  
+  &__text {
+    font-size: 1rem;
+    text-align: center;
+  }
+}

@@ -11,8 +11,8 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Switch>
-          <Route path="/" exact component={LandingPage} />
-          <Route path="/mobileDemo" exact component={MobileDemo} />
+          <Route path="/landingPage" component={LandingPage} />
+          <Route path="/mobileDemo" component={MobileDemo} />
         </Switch>
       </BrowserRouter>
     </div>

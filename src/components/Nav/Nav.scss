@@ -2,7 +2,6 @@
 @use "../../partials/mixins" as *;
 
 .Nav {
-  height: 7rem;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -10,4 +9,23 @@
   justify-content: center;
   background-color: $color_blue_primary;
   z-index: 100;
+
+  &__link {
+    display: block;
+    padding: .5rem 1rem;
+    margin: 1rem;
+    font-size: 2rem;
+    color: $color_bw_black;
+    text-decoration: none;
+    border-radius: .5rem;
+    transition: all .2s;
+    
+    &:hover {
+      background-color: $color_blue_light;
+    }
+
+    &--active {
+      background-color: $color_blue_light;
+    }
+  }
 }

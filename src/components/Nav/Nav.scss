@@ -13,15 +13,16 @@
 
   &__link {
     padding: .5rem 1rem;
-    margin: 1rem;
-    font-size: 1.5rem;
+    margin: .5rem;
+    font-size: 1rem;
     color: $color_bw_black;
     text-decoration: none;
     border-radius: .5rem;
     transition: all .2s;
     
     &:hover {
-      background-color: $color_blue_light;
+      background-color: $color_blue;
+      color: white;
     }
 
     &--active {

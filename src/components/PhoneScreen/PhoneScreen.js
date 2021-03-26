@@ -1,4 +1,4 @@
-import imagePixelScreen from "../../assets/pixel-screen.png"
+import imagePixelScreen from "../../assets/figma-phone-screen.png"
 import './PhoneScreen.scss';
 
 function PhoneScreen() {

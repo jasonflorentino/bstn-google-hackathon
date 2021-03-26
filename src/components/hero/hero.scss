@@ -22,11 +22,14 @@
         &--title{
             @include typography_heading;
             @include typography_mainFont;
+            margin-bottom: 1rem;
         }
 
         &--para{
             @include typography_text;
             @include typography_mainFont;
+            margin-bottom: 1rem;
+            font-size: 1rem;
         }
 
         &--btn{

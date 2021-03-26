@@ -13,7 +13,7 @@ function Nav() {
       <NavLink 
         to="/landingPage" 
         className="nav__link"
-        activeClassName="Nav__link--active"
+        activeClassName="nav__link--active"
       >
         Landing Page
       </NavLink>

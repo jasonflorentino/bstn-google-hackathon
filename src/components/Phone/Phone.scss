@@ -1,6 +1,17 @@
 @use "../../partials/variables" as *;
 @use "../../partials/mixins" as *;
 
+img {
+  transition: all .2s;
+}
+
+@mixin center_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .Phone {
   display: flex;
   align-items: center;
@@ -9,4 +20,34 @@
   &__googlePixel {
     height: 40rem;
   }
+
+  &__start {
+    @include center_image;
+    width: 16rem;
+
+    &--rescheduleLink {
+      position: absolute;
+      font-size: .75rem;
+      font-weight: 600;
+      z-index: 2;
+      background-color: white;
+      padding: .25rem;
+      left: 3.3rem;
+      top: 19.15rem;
+      cursor: pointer;
+    }
+  }
+
+  &__reschedule {
+    @include center_image;
+    width: 16rem;
+  }
+}
+
+.visible {
+  display: default;
+}
+
+.invisible {
+  display: none;
 }

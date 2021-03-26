@@ -1,9 +1,11 @@
 @use "../../partials/variables" as *;
 @use "../../partials/mixins" as *;
 
-.MobileDemo {
-  margin-top: 3rem;
+.Phone {
   display: flex;
-  justify-content: center;
   align-items: center;
+  
+  &__googlePixel {
+    height: 40rem;
+  }
 }

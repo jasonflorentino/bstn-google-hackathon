@@ -1,9 +1,10 @@
+import Phone from "../../components/Phone/Phone"
 import './MobileDemo.scss';
 
 function MobileDemo() {
   return (
     <div className="MobileDemo">
-      Mobile Demo
+      <Phone />
     </div>
   );
 }

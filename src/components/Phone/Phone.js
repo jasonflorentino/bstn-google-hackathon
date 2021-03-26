@@ -4,6 +4,7 @@ import phoneReschedule from "../../assets/phone-reschedule.png"
 import phoneDecision from "../../assets/phone-decision.png" 
 import widgetDecision from "../../assets/widget-start.png" 
 import widgetReschedule from "../../assets/widget-reschedule.png" 
+import check from "../../assets/check.png" 
 import widgetReminder from "../../assets/widget-reminder.png" 
 import widgetEducational from "../../assets/educational-info.png" 
 import './Phone.scss';
@@ -71,12 +72,12 @@ function Phone() {
       />
 
       {/* CONFIRM */}
-      {/* <img
-        className={`Phone__confirm ${widgetState === "confirm" ? "visible" : "invisible"}`}
-        src={widgetEducational} 
-        alt="widgetConfirm"
-        onClick={() => setWidgetState("none")}
-      /> */}
+      <img
+        className={`Phone__check ${widgetState === "confirm" ? "visible" : "invisible"}`}
+        src={check} 
+        alt="check"
+        onClick={() => setWidgetState("reminder")}
+      />
 
       {/* RESCHEDULE */}
       {/* <img
@@ -84,6 +85,14 @@ function Phone() {
         onClick={() => setWidgetState("none")}
         src={widgetReschedule} 
         alt="widgetReschedule" /> */}
+      
+      {/* CHECK */}
+      <img
+        className={`Phone__check ${widgetState === "none" ? "visible" : "invisible"}`}
+        src={check} 
+        alt="check"
+        onClick={() => setWidgetState("reminder")}
+      />
 
       <img 
         className="Phone__googlePixel"

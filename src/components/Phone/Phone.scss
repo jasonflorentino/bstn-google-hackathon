@@ -75,6 +75,11 @@ img {
     @include center_image;
     width: 16rem;
   }
+
+  &__check {
+    @include center_image;
+    width: 6rem;
+  }
 }
 
 .visible {

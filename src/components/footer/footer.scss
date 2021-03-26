@@ -2,13 +2,12 @@
 @use "../../partials/mixins" as *;
 
 .footer {
-    margin: 3rem 0 3rem 0;
+  background-color: #C4C4C4;
     width: 100%;
-    padding: .5rem 7.8vw;
+    padding: 3rem 0 3rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
   &__cta{
    
     &--btn{
@@ -18,10 +17,9 @@
   }
 
   &__socials{
-      width: 30%;
+      width: 20%;
       display: flex;
       justify-content: space-evenly;
-      background-color: white;
 
       &--icon{
           width: 35px;

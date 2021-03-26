@@ -10,6 +10,14 @@
   background-color: white;
   z-index: 100;
 
+  &__icon{
+    display: flex;
+  }
+  &__title{
+    color: black;
+    padding-right: 1rem;
+  }
+
 
   &__link {
     padding: .5rem 1rem;

@@ -6,6 +6,7 @@ function Nav() {
   return (
     <section className="nav">
     <div className='nav__icon'>
+      <h5 className='nav__title'>Google Pulse</h5>
       <img src={pulse} />
     </div>
     <div className='nav__links' >

@@ -7,8 +7,8 @@
 }
 
 .hero{
-    color: #494949;
-    background-color: #C4C4C4;
+    color: $color_bw_black;
+    background-color: #DDDDDD;
     display: flex;
     justify-content: space-between;
     padding: 7.8vw 7.8vw;
@@ -41,8 +41,5 @@
     &__pic{
         margin-right: 5rem;
             height: 40vw;
-            transform: rotate(30deg) translate(-2rem, 0);
-           
-
     }
 }

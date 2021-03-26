@@ -1,3 +1,6 @@
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import LandingPage from "./pages/LandingPage/LandingPage";
+import MobileDemo from "./pages/MobileDemo/MobileDemo";
 import Nav from "./components/Nav/Nav";
 
 import './App.scss';
@@ -5,8 +8,13 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Nav />
-      Home
+      <BrowserRouter>
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={LandingPage} />
+          <Route path="/mobileDemo" exact component={MobileDemo} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

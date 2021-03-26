@@ -1,2 +1,13 @@
 @use "../../partials/variables" as *;
 @use "../../partials/mixins" as *;
+
+.Nav {
+  height: 7rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: $color_blue_primary;
+  z-index: 100;
+}

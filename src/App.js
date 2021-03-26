@@ -12,6 +12,7 @@ function App() {
       <BrowserRouter>
       <Nav />
         <Switch>
+          <Route path='/' exact component={LandingPage} />
           <Route path="/landingPage" component={LandingPage} />
           <Route path="/mobileDemo" component={MobileDemo} />
         </Switch>

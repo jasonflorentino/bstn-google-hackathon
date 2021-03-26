@@ -1,0 +1,49 @@
+@use "../../partials/variables" as *;
+@use "../../partials/mixins" as *;
+
+*, *::before, *::after{
+    box-sizing: border-box;
+
+}
+
+.hero{
+    color: #494949;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: space-between;
+    padding: 7.8vw 7.8vw;
+
+    &__info{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        &--title{
+            @include typography_heading;
+            @include typography_mainFont;
+        }
+
+        &--para{
+            @include typography_text;
+            @include typography_mainFont;
+        }
+
+        &--btn{
+            background-color: black;
+            color: white;
+            border-radius: 1rem;
+            width: 25vw;
+            height: 80px;
+        }
+
+    }
+
+    &__pic{
+        margin-right: 5rem;
+            height: 40vw;
+            transform: rotate(30deg) translate(-2rem, 0);
+           
+
+    }
+}

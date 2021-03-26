@@ -1,0 +1,12 @@
+@use "../../partials/variables" as *;
+@use "../../partials/mixins" as *;
+
+.PhoneScreen {
+  position: absolute;
+  bottom: .65rem;
+  left: .95rem;
+
+  &__pixelScreen {
+    height: 35.6rem;
+  }
+}

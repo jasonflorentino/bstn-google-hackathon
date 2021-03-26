@@ -4,6 +4,7 @@
 .Phone {
   display: flex;
   align-items: center;
+  position: relative;
   
   &__googlePixel {
     height: 40rem;

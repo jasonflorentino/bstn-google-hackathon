@@ -12,6 +12,15 @@ img {
   transform: translate(-50%, -50%);
 }
 
+@mixin decision_link {
+  position: absolute;
+  font-size: .7rem;
+  font-weight: 600;
+  z-index: 2;
+  background-color: white;
+  padding: .25rem;
+}
+
 .Phone {
   display: flex;
   align-items: center;
@@ -21,24 +30,48 @@ img {
     height: 40rem;
   }
 
-  &__start {
+  &__reminder{
+    @include center_image;
+    width: 16rem;
+  }
+
+  &__decision {
     @include center_image;
     width: 16rem;
 
-    &--rescheduleLink {
-      position: absolute;
-      font-size: .75rem;
-      font-weight: 600;
-      z-index: 2;
-      background-color: white;
-      padding: .25rem;
-      left: 3.3rem;
-      top: 19.15rem;
+    &--confirm {
+      @include decision_link;
+      left: 6.8rem;
+      top: 11.6rem;
+      cursor: pointer;
+    }
+
+    &--reschedule {
+      @include decision_link;
+      left: 6.3rem;
+      top: 14.25rem;
+      cursor: pointer;
+    }
+
+    &--cancel {
+      @include decision_link;
+      left: 7.1rem;
+      top: 16.8rem;
       cursor: pointer;
     }
   }
 
+  &__educate {
+    @include center_image;
+    width: 16rem;
+  }
+
   &__reschedule {
+    @include center_image;
+    width: 16rem;
+  }
+
+  &__confirm {
     @include center_image;
     width: 16rem;
   }
